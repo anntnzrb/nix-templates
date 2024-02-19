@@ -31,5 +31,7 @@
         description = "annt's Haskell";
       };
     };
+
+    defaultTemplate = self.templates.trivial;
   };
 }
