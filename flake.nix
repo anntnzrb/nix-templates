@@ -1,10 +1,10 @@
 {
-  description = "annt's Templates for Nix";
+  description = "annt's templates for Nix";
 
   inputs = {
     nix-templates.url = "github:nixos/templates/master";
-    rust-annt.url = "github:anntnzrb/rusted/main";
-    haskell-annt.url = "github:anntnzrb/kell/main";
+    annt-rust.url = "github:anntnzrb/rusted/main";
+    annt-haskell.url = "github:anntnzrb/kell/main";
   };
 
   outputs = { self, ... }@inputs: {
@@ -22,12 +22,12 @@
       };
 
       rust = {
-        path = inputs.rust-annt.outPath;
+        path = inputs.annt-rust.outPath;
         description = "annt's Rust";
       };
 
       haskell = {
-        path = inputs.haskell-annt.outPath;
+        path = inputs.annt-haskell.outPath;
         description = "annt's Haskell";
       };
     };
