@@ -1,20 +1,68 @@
 {
   "nodes": {
+    "annt-haskell": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "fourmolu-nix": "fourmolu-nix",
+        "haskell-flake": "haskell-flake",
+        "nixpkgs": "nixpkgs",
+        "systems": "systems",
+        "treefmt-nix": "treefmt-nix"
+      },
+      "locked": {
+        "lastModified": 1714525070,
+        "narHash": "sha256-0T94SfNOFdS9W+vYzc6uKsRfjM4QOgxtxpWDyIX8lJY=",
+        "owner": "anntnzrb",
+        "repo": "kell",
+        "rev": "fe89b0f9fcfbc0b72ab9509ef6382614901d7fbd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "anntnzrb",
+        "ref": "main",
+        "repo": "kell",
+        "type": "github"
+      }
+    },
+    "annt-rust": {
+      "inputs": {
+        "devenv": "devenv",
+        "flake-parts": "flake-parts_2",
+        "mk-shell-bin": "mk-shell-bin",
+        "nix2container": "nix2container",
+        "nixpkgs": "nixpkgs_3",
+        "treefmt-nix": "treefmt-nix_2"
+      },
+      "locked": {
+        "lastModified": 1714526558,
+        "narHash": "sha256-sBshrvtoQytb1WZkSTSJoVRD4ihfyM81wv5fGNJugWw=",
+        "owner": "anntnzrb",
+        "repo": "rusted",
+        "rev": "52b79a4f50b5055c1a325aafb825650eec3b0b9e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "anntnzrb",
+        "ref": "main",
+        "repo": "rusted",
+        "type": "github"
+      }
+    },
     "cachix": {
       "inputs": {
         "devenv": "devenv_2",
         "flake-compat": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "flake-compat"
         ],
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "nixpkgs"
         ],
         "pre-commit-hooks": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "pre-commit-hooks"
         ]
@@ -39,7 +87,7 @@
         "flake-compat": "flake-compat_2",
         "nix": "nix_2",
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "nixpkgs"
         ],
         "pre-commit-hooks": "pre-commit-hooks"
@@ -61,7 +109,7 @@
     "devenv_2": {
       "inputs": {
         "flake-compat": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "cachix",
           "flake-compat"
@@ -70,7 +118,7 @@
         "nixpkgs": "nixpkgs_2",
         "poetry2nix": "poetry2nix",
         "pre-commit-hooks": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "cachix",
           "pre-commit-hooks"
@@ -230,7 +278,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "pre-commit-hooks",
           "nixpkgs"
@@ -247,30 +295,6 @@
       "original": {
         "owner": "hercules-ci",
         "repo": "gitignore.nix",
-        "type": "github"
-      }
-    },
-    "haskell-annt": {
-      "inputs": {
-        "flake-parts": "flake-parts",
-        "fourmolu-nix": "fourmolu-nix",
-        "haskell-flake": "haskell-flake",
-        "nixpkgs": "nixpkgs",
-        "systems": "systems",
-        "treefmt-nix": "treefmt-nix"
-      },
-      "locked": {
-        "lastModified": 1714525070,
-        "narHash": "sha256-0T94SfNOFdS9W+vYzc6uKsRfjM4QOgxtxpWDyIX8lJY=",
-        "owner": "anntnzrb",
-        "repo": "kell",
-        "rev": "fe89b0f9fcfbc0b72ab9509ef6382614901d7fbd",
-        "type": "github"
-      },
-      "original": {
-        "owner": "anntnzrb",
-        "ref": "main",
-        "repo": "kell",
         "type": "github"
       }
     },
@@ -308,7 +332,7 @@
       "inputs": {
         "flake-compat": "flake-compat",
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "cachix",
           "devenv",
@@ -334,7 +358,7 @@
     "nix-github-actions": {
       "inputs": {
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "cachix",
           "devenv",
@@ -376,7 +400,7 @@
       "inputs": {
         "flake-utils": "flake-utils_3",
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "nixpkgs"
         ]
       },
@@ -397,12 +421,12 @@
     "nix_2": {
       "inputs": {
         "flake-compat": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "flake-compat"
         ],
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "nixpkgs"
         ],
@@ -560,7 +584,7 @@
         "flake-utils": "flake-utils",
         "nix-github-actions": "nix-github-actions",
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "cachix",
           "devenv",
@@ -584,14 +608,14 @@
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "flake-compat"
         ],
         "flake-utils": "flake-utils_2",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "devenv",
           "nixpkgs"
         ],
@@ -613,33 +637,9 @@
     },
     "root": {
       "inputs": {
-        "haskell-annt": "haskell-annt",
-        "nix-templates": "nix-templates",
-        "rust-annt": "rust-annt"
-      }
-    },
-    "rust-annt": {
-      "inputs": {
-        "devenv": "devenv",
-        "flake-parts": "flake-parts_2",
-        "mk-shell-bin": "mk-shell-bin",
-        "nix2container": "nix2container",
-        "nixpkgs": "nixpkgs_3",
-        "treefmt-nix": "treefmt-nix_2"
-      },
-      "locked": {
-        "lastModified": 1714526558,
-        "narHash": "sha256-sBshrvtoQytb1WZkSTSJoVRD4ihfyM81wv5fGNJugWw=",
-        "owner": "anntnzrb",
-        "repo": "rusted",
-        "rev": "52b79a4f50b5055c1a325aafb825650eec3b0b9e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "anntnzrb",
-        "ref": "main",
-        "repo": "rusted",
-        "type": "github"
+        "annt-haskell": "annt-haskell",
+        "annt-rust": "annt-rust",
+        "nix-templates": "nix-templates"
       }
     },
     "systems": {
@@ -705,7 +705,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "haskell-annt",
+          "annt-haskell",
           "nixpkgs"
         ]
       },
@@ -726,7 +726,7 @@
     "treefmt-nix_2": {
       "inputs": {
         "nixpkgs": [
-          "rust-annt",
+          "annt-rust",
           "nixpkgs"
         ]
       },
