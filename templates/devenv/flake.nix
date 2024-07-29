@@ -10,16 +10,25 @@
     nixpkgs.url = "github:cachix/devenv-nixpkgs/rolling";
 
     # src tree fmt
-    treefmt-nix.url = "github:numtide/treefmt-nix/main";
-    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # devenv
-    devenv.url = "github:cachix/devenv";
-    devenv-root.url = "file+file:///dev/null";
-    devenv-root.flake = false;
-    nix2container.url = "github:nlewo/nix2container";
-    nix2container.inputs.nixpkgs.follows = "nixpkgs";
-    mk-shell-bin.url = "github:rrbutani/nix-mk-shell-bin";
+    devenv.url = "github:cachix/devenv/main";
+    devenv-root = {
+      url = "file+file:///dev/null";
+      flake = false;
+    };
+    nix2container = {
+      url = "github:nlewo/nix2container/master";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-utils.follows = "flake-utils";
+      };
+    };
+    mk-shell-bin.url = "github:rrbutani/nix-mk-shell-bin/main";
   };
 
   outputs = inputs@{ flake-parts, devenv-root, ... }:
