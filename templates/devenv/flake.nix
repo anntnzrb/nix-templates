@@ -23,10 +23,7 @@
     };
     nix2container = {
       url = "github:nlewo/nix2container/master";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     mk-shell-bin.url = "github:rrbutani/nix-mk-shell-bin/main";
   };
