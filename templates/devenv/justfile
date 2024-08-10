@@ -4,4 +4,4 @@ default:
 
 # format source tree
 fmt:
-    nix fmt
+    treefmt
