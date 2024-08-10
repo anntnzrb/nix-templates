@@ -8,33 +8,29 @@
 
   inputs = {
     nixpkgs.url = "github:cachix/devenv-nixpkgs/rolling";
+    systems.url = "github:nix-systems/default/main";
 
     # src tree fmt
-    treefmt-nix = {
-      url = "github:numtide/treefmt-nix/main";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    treefmt-nix.url = "github:numtide/treefmt-nix/main";
+    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
 
     # devenv
     devenv.url = "github:cachix/devenv/main";
-    devenv-root = {
-      url = "file+file:///dev/null";
-      flake = false;
-    };
-    nix2container = {
-      url = "github:nlewo/nix2container/master";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    mk-shell-bin.url = "github:rrbutani/nix-mk-shell-bin/main";
+
+    devenv-root.url = "file+file:///dev/null";
+    devenv-root.flake = false;
+
+    nix2container.url = "github:nlewo/nix2container/master";
+    nix2container.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ flake-parts, devenv-root, ... }:
+  outputs = inputs@{ flake-parts, systems, devenv-root, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = with inputs; [
         devenv.flakeModule
         treefmt-nix.flakeModule
       ];
-      systems = [ "x86_64-linux" "i686-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
+      systems = import systems;
 
       perSystem = { config, pkgs, ... }: {
         devenv.shells.default = {
@@ -43,8 +39,9 @@
           devenv.root =
             let
               devenvRootFileContent = builtins.readFile devenv-root.outPath;
+              file = devenvRootFileContent;
             in
-            pkgs.lib.mkIf (devenvRootFileContent != "") devenvRootFileContent;
+            pkgs.lib.mkIf (file != "") file;
 
           languages = {
             nix.enable = true;
