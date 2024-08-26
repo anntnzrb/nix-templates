@@ -3,8 +3,10 @@
 
   inputs = {
     nix-templates.url = "github:nixos/templates/master";
+
     annt-rust.url = "github:anntnzrb/rusted/main";
     annt-haskell.url = "github:anntnzrb/kell/main";
+    annt-www.url = "github:anntnzrb/wwwsoy/main";
   };
 
   outputs = { self, ... }@inputs: {
@@ -29,6 +31,11 @@
       haskell = {
         path = inputs.annt-haskell.outPath;
         description = "annt's Haskell";
+      };
+
+      www = {
+        path = inputs.annt-www.outPath;
+        description = "annt's www";
       };
     };
 
