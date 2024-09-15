@@ -47,18 +47,6 @@
             nix.enable = true;
           };
 
-          devcontainer = {
-            enable = true;
-            settings = {
-              image = "ghcr.io/cachix/devenv:latest";
-              updateContentCommand = "direnv reload";
-              customizations.vscode.extensions = [
-                "mkhl.direnv"
-                "jnoortheen.nix-ide"
-              ];
-            };
-          };
-
           packages = with pkgs; [
             just
             config.treefmt.build.wrapper
