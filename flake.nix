@@ -4,14 +4,14 @@
   inputs = {
     nix-templates.url = "github:nixos/templates/master";
 
-    annt-rust.url = "github:anntnzrb/rusted/main";
-    annt-haskell.url = "github:anntnzrb/kell/main";
+    srid-rust.url = "github:srid/rust-nix-template/master";
+    srid-haskell.url = "github:srid/haskell-template/master";
     annt-www.url = "github:anntnzrb/wwwsoy/main";
   };
 
   outputs = { self, ... }@inputs: {
-    templates = rec {
-      default = trivial;
+    templates = {
+      default = self.templates.trivial;
 
       trivial = {
         path = "${inputs.nix-templates.outPath}/empty";
@@ -24,13 +24,13 @@
       };
 
       rust = {
-        path = inputs.annt-rust.outPath;
-        description = "annt's Rust";
+        path = inputs.srid-rust.outPath;
+        description = "srid's Rust";
       };
 
       haskell = {
-        path = inputs.annt-haskell.outPath;
-        description = "annt's Haskell";
+        path = inputs.srid-haskell.outPath;
+        description = "srid's Haskell";
       };
 
       www = {
@@ -38,7 +38,5 @@
         description = "annt's www";
       };
     };
-
-    defaultTemplate = self.templates.trivial;
   };
 }
