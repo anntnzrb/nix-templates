@@ -2,22 +2,16 @@
   description = "annt's templates for Nix";
 
   inputs = {
-    nix-templates.url = "github:nixos/templates/master";
-
     annt-dev.url = "github:anntnzrb/dev/main";
+    annt-www.url = "github:anntnzrb/wwwsoy/main";
+
     srid-rust.url = "github:srid/rust-nix-template/master";
     srid-haskell.url = "github:srid/haskell-template/master";
-    annt-www.url = "github:anntnzrb/wwwsoy/main";
   };
 
-  outputs = { self, ... }@inputs: {
+  outputs = inputs: {
     templates = {
-      default = self.templates.trivial;
-
-      trivial = {
-        path = "${inputs.nix-templates.outPath}/empty";
-        description = "The trivial flake";
-      };
+      default = inputs.self.templates.dev;
 
       dev = {
         path = inputs.annt-dev.outPath;
