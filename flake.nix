@@ -10,26 +10,26 @@
   };
 
   outputs = inputs: {
-    templates = {
-      default = inputs.self.templates.dev;
+    templates = with inputs; {
+      default = self.templates.dev;
 
       dev = {
-        path = inputs.annt-dev.outPath;
+        path = annt-dev.outPath;
         description = "annt's dev";
       };
 
       rust = {
-        path = inputs.srid-rust.outPath;
+        path = srid-rust.outPath;
         description = "srid's Rust";
       };
 
       haskell = {
-        path = inputs.srid-haskell.outPath;
+        path = srid-haskell.outPath;
         description = "srid's Haskell";
       };
 
       www = {
-        path = inputs.annt-www.outPath;
+        path = annt-www.outPath;
         description = "annt's www";
       };
     };
