@@ -4,6 +4,7 @@
   inputs = {
     nix-templates.url = "github:nixos/templates/master";
 
+    annt-dev.url = "github:anntnzrb/dev/main";
     srid-rust.url = "github:srid/rust-nix-template/master";
     srid-haskell.url = "github:srid/haskell-template/master";
     annt-www.url = "github:anntnzrb/wwwsoy/main";
@@ -18,9 +19,9 @@
         description = "The trivial flake";
       };
 
-      devenv = {
-        path = ./templates/devenv;
-        description = "annt's devenv";
+      dev = {
+        path = inputs.annt-dev.outPath;
+        description = "annt's dev";
       };
 
       rust = {
