@@ -1255,11 +1255,11 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1725587318,
-        "narHash": "sha256-Xll3Xeq3BSAYRyuMdU2h1HP6JTbeOUfzZk/q0eAJ5k0=",
+        "lastModified": 1726772456,
+        "narHash": "sha256-TUD+BjLARx3ZuGQ3PucNftbI3785Y5mz6N1uyPe8z58=",
         "owner": "srid",
         "repo": "haskell-template",
-        "rev": "7fca847acc06d4be946e56a18eeca767cc43afc7",
+        "rev": "5abfbedd090d37d896055a531b99264fe009fa51",
         "type": "github"
       },
       "original": {
@@ -1280,11 +1280,11 @@
         "treefmt-nix": "treefmt-nix_4"
       },
       "locked": {
-        "lastModified": 1726080733,
-        "narHash": "sha256-olTL6FkyUVcNRaxLyrqrt9LcTy/46rAUgw8wuO89jQs=",
+        "lastModified": 1726772904,
+        "narHash": "sha256-xXirR1+2Vsktmp53kof5utTuqL5dgle7h+x4AxC+jTs=",
         "owner": "srid",
         "repo": "rust-nix-template",
-        "rev": "7f6a76619d8a49064ffd8e1bae1f57e8bf0cd33a",
+        "rev": "92939a935091dbaab491556c62aa74f197ad374e",
         "type": "github"
       },
       "original": {
