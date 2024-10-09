@@ -226,11 +226,11 @@
         "pre-commit-hooks": "pre-commit-hooks_4"
       },
       "locked": {
-        "lastModified": 1728385239,
-        "narHash": "sha256-/rKMkOPNIjfrQDQ+XlGGLH0iLT/wYtdQrBY4rH49IzM=",
+        "lastModified": 1728420002,
+        "narHash": "sha256-JTFUKzug1z/S1q9wg3emYAYYdTpmSwG5kyOYT7+hs/s=",
         "owner": "cachix",
         "repo": "devenv",
-        "rev": "f16bfde40bb9df8f9fd88bd3a5036a4a99c09bb1",
+        "rev": "4df79955e326439dd77d9c6571031e41e51f0f55",
         "type": "github"
       },
       "original": {
@@ -1255,11 +1255,11 @@
         "treefmt-nix": "treefmt-nix_3"
       },
       "locked": {
-        "lastModified": 1726772456,
-        "narHash": "sha256-TUD+BjLARx3ZuGQ3PucNftbI3785Y5mz6N1uyPe8z58=",
+        "lastModified": 1728428876,
+        "narHash": "sha256-DJFBFzs9+45z/i53kqYge6L3kxzRok+d2JQcYjBWT50=",
         "owner": "srid",
         "repo": "haskell-template",
-        "rev": "5abfbedd090d37d896055a531b99264fe009fa51",
+        "rev": "c05c9977e04c0e09ae6b5e06ac2f2332c60dcad5",
         "type": "github"
       },
       "original": {
@@ -1280,11 +1280,11 @@
         "treefmt-nix": "treefmt-nix_4"
       },
       "locked": {
-        "lastModified": 1727716444,
-        "narHash": "sha256-TsJx3VcoSNPnRfbkAXFn0cEO8N8vgsz3YbWzFnlRhDU=",
+        "lastModified": 1728428985,
+        "narHash": "sha256-QSJyUpGjBsBnhvKPlpu5ZQZu8wlUtdk2sw8Wn/cyR/0=",
         "owner": "srid",
         "repo": "rust-nix-template",
-        "rev": "5a372453669fefae9f09c91dd2b15f4c28be7946",
+        "rev": "f1fea514816b0c9ed39fb19985726377ddcf32fd",
         "type": "github"
       },
       "original": {
