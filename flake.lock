@@ -1280,11 +1280,11 @@
         "treefmt-nix": "treefmt-nix_4"
       },
       "locked": {
-        "lastModified": 1728428985,
-        "narHash": "sha256-QSJyUpGjBsBnhvKPlpu5ZQZu8wlUtdk2sw8Wn/cyR/0=",
+        "lastModified": 1728757140,
+        "narHash": "sha256-b5q8AzAZKp2MXms1//VwQ2piu5bo3nW95CiT0Sgc/fw=",
         "owner": "srid",
         "repo": "rust-nix-template",
-        "rev": "f1fea514816b0c9ed39fb19985726377ddcf32fd",
+        "rev": "eb908f990712f5d552e484d2135b45e1a86fdd52",
         "type": "github"
       },
       "original": {
