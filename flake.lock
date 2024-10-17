@@ -226,11 +226,11 @@
         "pre-commit-hooks": "pre-commit-hooks_4"
       },
       "locked": {
-        "lastModified": 1729087493,
-        "narHash": "sha256-O1nookxwO7PTEHAYccg1PlMzPuWzhbBLEifPypH+hlU=",
+        "lastModified": 1729179079,
+        "narHash": "sha256-4weQifBTSszk8W7vaG5+mppvIsfyVBILFqW7iFp/uxo=",
         "owner": "cachix",
         "repo": "devenv",
-        "rev": "d612b77ff73912cd82e58256ab5e84d5904abef7",
+        "rev": "11c71a53661aff81b0f93d2958500d8c9ab71866",
         "type": "github"
       },
       "original": {
@@ -1280,11 +1280,11 @@
         "treefmt-nix": "treefmt-nix_4"
       },
       "locked": {
-        "lastModified": 1728757140,
-        "narHash": "sha256-b5q8AzAZKp2MXms1//VwQ2piu5bo3nW95CiT0Sgc/fw=",
+        "lastModified": 1729171644,
+        "narHash": "sha256-17ROVavzUTde/3b2tCc0HopqYIxrhEnj0DlgmGLitYM=",
         "owner": "srid",
         "repo": "rust-nix-template",
-        "rev": "eb908f990712f5d552e484d2135b45e1a86fdd52",
+        "rev": "78dac57bcbb9199ed258108af6e0e727b9ad4436",
         "type": "github"
       },
       "original": {
