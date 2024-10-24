@@ -13,11 +13,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1729660704,
-        "narHash": "sha256-GMq+qsFxKlmz9egBUlKZ31wuQ5BfZV+2OJrJrzzleA4=",
+        "lastModified": 1729747085,
+        "narHash": "sha256-fB29PSafg2R71DsnPKsALqjKo2Ln0IntOQOZi46bIQg=",
         "owner": "anntnzrb",
         "repo": "dev",
-        "rev": "5db7893fddd66841940fa8fcf2b2df554b330948",
+        "rev": "8baf79c61304004ef940c50b56a64e463fc08ad1",
         "type": "github"
       },
       "original": {
@@ -179,11 +179,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1729641677,
-        "narHash": "sha256-xqZJ10TAw70Zk12XmJ/aKABhE6t4Z/rrf/VdLTxqW00=",
+        "lastModified": 1729681848,
+        "narHash": "sha256-9PKexVMEAyElpL1mB9iZShnZjWvCTfsm8pDbVQDAIRA=",
         "owner": "cachix",
         "repo": "devenv",
-        "rev": "4f634c92037d3fb7a7cc2feddc4d686ace83b57f",
+        "rev": "2634c4c9e9226a3fb54550ad4115df1992d502c5",
         "type": "github"
       },
       "original": {
