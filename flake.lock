@@ -185,11 +185,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1731333803,
-        "narHash": "sha256-/LfPMlJhWMPFDSSm2U8GWBWRH2LrQ++FSF+DFOKEYnw=",
+        "lastModified": 1731361978,
+        "narHash": "sha256-MvtuMqGVMUcyt8niWadt6QWNdfhl+MJvmIe6aZEkIzE=",
         "owner": "cachix",
         "repo": "devenv",
-        "rev": "2ab6d0c97fb620538c28fa458b3c6151eeb15f82",
+        "rev": "4b770aa91211fc1875d9d07aedf80ea2eae012d5",
         "type": "github"
       },
       "original": {
