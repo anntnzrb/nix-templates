@@ -185,11 +185,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1732107313,
-        "narHash": "sha256-bmtZMAiLyTjUqNX6Gr0CjRyQXvbO/LvKu7Njjm9mCaY=",
+        "lastModified": 1732121232,
+        "narHash": "sha256-CmJt7aeSCJnJYGtYpyslRI+pC28RPVD43PD/7kkIVuM=",
         "owner": "cachix",
         "repo": "devenv",
-        "rev": "7ce658cd581bfc42e4646cb563ad2f340f8c63b6",
+        "rev": "6ff1e5f92c0d74bbb12f7454a239ca2f02e05ea1",
         "type": "github"
       },
       "original": {
@@ -881,11 +881,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1731978255,
-        "narHash": "sha256-pSQlHwiS8IfUyoYP7aUcREXum/J/E+Pmhx+dfaWeZYQ=",
+        "lastModified": 1732119823,
+        "narHash": "sha256-JBKpbVHA929LldoDkX4xbYZczB0jYiekOAgg46EMLdk=",
         "owner": "srid",
         "repo": "haskell-template",
-        "rev": "85b7437665ebaa55911ccdddef576957ac1011b7",
+        "rev": "b224c24f7db6afea775d80a994c12ded162ecbf4",
         "type": "github"
       },
       "original": {
