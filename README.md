@@ -9,14 +9,13 @@ but perhaps it is useful or inspiring to others as well.
 ## Usage
 
 - Show all available templates:
+
 ```sh
 nix flake show github:anntnzrb/nix-templates
 ```
 
 - Use a template:
+
 ```sh
 nix flake new -t github:anntnzrb/nix-templates#<template> <directory>
-
-# e.g.
-nix flake new -t github:anntnzrb/nix-templates#haskell some-haskell-project
 ```
