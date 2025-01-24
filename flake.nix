@@ -4,13 +4,15 @@
   outputs =
     { self }:
     {
-      templates = {
-        default = self.templates.devenv;
+      templates =
+        let
+          mkTemplate = path: description: { inherit path description; };
+        in
+        {
+          devenv = mkTemplate ./devenv "devenv template";
+          gleam = mkTemplate ./gleam "gleam template";
 
-        devenv = {
-          path = ./devenv;
-          description = "devenv template";
+          default = self.templates.devenv;
         };
-      };
     };
 }
